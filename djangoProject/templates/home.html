@@ -1,0 +1,8 @@
+<h1>Django Image Uploading</h1>
+<button><a href="/post">Загрузить файл!</a></button>
+<ul>
+  {% for post in object_list %}
+    <h2>{{ post.title }}</h2>
+    <img src="{{ post.cover.url}}" alt="{{ post.title }}">
+  {% endfor %}
+</ul>
